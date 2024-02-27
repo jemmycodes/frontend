@@ -34,7 +34,7 @@ const CloudFlareTurnStileComp = (
 			rel="prefetch"
 			as="div"
 			ref={ref}
-			scriptOptions={{ defer: true }}
+			scriptOptions={{ async: true }}
 			siteKey={SITEKEY}
 			className="mx-auto mt-3"
 			onError={() => setStatus("error")}
